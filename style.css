@@ -1,0 +1,87 @@
+/* 
+t = top
+r = right
+b = bottom
+l = left
+
+margin: 10px; trbl 
+margin: 10px 10px; tb rl
+margin: 10px 10px 10px; t rl b
+margin: 10px 10px 10px 10px; t r b l
+
+padding: 10px; trbl 
+padding: 10px 10px; tb rl
+padding: 10px 10px 10px; t rl b
+padding: 10px 10px 10px 10px; t r b l
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background: linear-gradient(to right, #b965ed, #a01aed);
+    font-family: 'Roboto', Courier, monospace;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-contact {
+    width: 800px;
+    height: auto;
+    display: flex;
+    /* margin: 30px auto; */
+    border: 1px solid #999999;
+    box-shadow: 2px 1px 5px #999999;
+}
+
+.form-contact .form-contact-left,
+.form-contact .form-contact-right {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+}
+
+.form-contact .form-contact-left {
+    background-color: #1eabc4;
+}
+
+.form-contact .form-contact-left h1,
+.form-contact .form-contact-left p {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+.form-contact .form-contact-right label {
+    font-size: 12px;
+    color: #666666;
+    width: 90%;
+}
+
+.form-contact .form-contact-right input,
+.form-contact .form-contact-right textarea {
+    width: 80%;
+    padding: 15px;
+    border: 0;
+    background-color: #dddddd;
+    margin: 5px 0;
+}
+
+.form-contact .form-contact-right button {
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    border: 0;
+    background-color: #1eabc4;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
